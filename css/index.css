@@ -43,8 +43,10 @@ body {
   color:#ecf0f1;
   text-decoration:none;
   border-radius:5px;
-  border:solid 1px #f39c12;
-  background:#e67e22;
+  /* border:solid 1px #f39c12; */
+  border: solid 1px #a02720;
+  /* background:#e67e22; */
+  background: #a02727;
   text-align:center;
   padding:16px 18px 14px;
   margin: 12px;
@@ -55,7 +57,9 @@ body {
 	
   -webkit-box-shadow: 0px 6px 0px #d35400;
   -moz-box-shadow: 0px 6px 0px #d35400;
-  box-shadow: 0px 6px 0px #d35400;
+  /* box-shadow: 0px 6px 0px #d35400; */
+  box-shadow: 0px 6px 0px #ce2626;
+  
 }
 
 .button-3d:active{
