@@ -1,1 +1,1 @@
-git subtree push -P frontend origin gh-pages --squash
+git subtree push -P Frontend origin gh-pages --squash
