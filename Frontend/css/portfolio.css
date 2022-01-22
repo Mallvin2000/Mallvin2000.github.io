@@ -1,3 +1,55 @@
 .section {
     margin-top: 5%;
 }
+
+
+.headline {
+    margin-top: 7%; /* Becuse of stick nav bar value is high */
+}
+
+.headline-image img {
+    width: 100%;
+}
+
+
+/* Footer Styles */
+html {
+    height: 100%;
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  body {
+    position: relative;
+    margin: 0;
+    padding-bottom: 6rem;
+    min-height: 100%;
+  }
+  
+  #footer {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      padding: 1rem;
+      /* background-color: #d94575; */
+      background-color: #343a40;
+      text-align: center;
+      color: #fff;
+      height: 80px;
+  }
+  .spacer {
+    height: 85px;
+    margin: 0 0 -50px 0;
+    /* margin: 20px 0 -50px 0; use this if you want #container to have a 'bottom padding', in this case of 20px */
+    background: transparent; /* you'll need this if #container's parent element has a different background from #container itself */
+  }
+
+@media only screen and (max-width: 768px) {
+    .headline {
+        margin-top: 20%; /* Becuse of stick nav bar value is high */
+    }
+}
