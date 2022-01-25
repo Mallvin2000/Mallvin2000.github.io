@@ -63,6 +63,7 @@
 #skills .skills-wrapper {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 12px;
 }
 
@@ -111,8 +112,13 @@ html {
     background: transparent; /* you'll need this if #container's parent element has a different background from #container itself */
   }
 
+  
+
 @media only screen and (max-width: 768px) {
     .headline {
-        margin-top: 20%; /* Becuse of stick nav bar value is high */
+        /* margin-top: 20%; */ /* Becuse of stick nav bar value is high */
+        padding: 0;
+        padding-top: 226px;
     }
 }
+
