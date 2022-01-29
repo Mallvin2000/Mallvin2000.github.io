@@ -60,20 +60,6 @@
 }
 
 
-#skills .skills-wrapper {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-
-#skills .skills-container .skill {
-  /* border: 1px solid black; */
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 6px -2px, rgba(0, 0, 0, 0.3) 0px 3px 9px -1px;
-  padding: 20px;
-  border-radius: 50%;
-}
-
 
 
 /* Footer Styles */
@@ -124,7 +110,21 @@ html {
 
 
 
-/* Skils section styling */
+/* Skills section styling */
+
+#skills .skills-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+#skills .skills-container .skill {
+  /* border: 1px solid black; */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 6px -2px, rgba(0, 0, 0, 0.3) 0px 3px 9px -1px;
+  padding: 20px;
+  border-radius: 50%;
+}
 
 .skill {
   position: relative;
@@ -296,6 +296,51 @@ html {
 
 /* End of project section styling */
 
+/* #events .events-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+#events .events-container .event {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 6px -2px, rgba(0, 0, 0, 0.3) 0px 3px 9px -1px;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.event {
+  position: relative;
+
+} */
+
+.event {
+  
+}
+
+.event .event-image {
+  text-align: center;
+  margin-bottom: 8%;
+}
+
+.event .event-image img {
+  width: 100%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 6px -2px, rgba(0, 0, 0, 0.3) 0px 3px 9px -1px;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+
+.event .event-name {
+  /* text-align: justify; */
+}
+
+/* Event section styling */
+
+
+
+/* End of event section styling */
+
 
 @media only screen and (max-width: 768px) {
   .experience-wrapper {
@@ -308,6 +353,11 @@ html {
 
   .project-wrapper {
     margin-bottom: 15px;
+  }
+
+  .events-container .event {
+    margin-bottom: 8%;
+    text-align: center;
   }
 
 }
