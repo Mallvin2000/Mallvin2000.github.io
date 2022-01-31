@@ -1,82 +1,407 @@
+.section {
+  margin-top: 7%;
+}
 
-.sub-headline h2 {
-    font-size: 22px;
+.headline {
+  padding: 135px 200px 0px 200px; /* Value for top padding is high becuase of sticky navbar  */
+  background-color: #CCCCCC;
+}
+
+.headline-image img {
+    width: 100%;
+    height: 50%;
+}
+
+.sub-title {
+  margin-top: 4%;
+}
+
+.sub-title h3 {
+  font-size: 20px;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
 
 
-.instructions {
-    margin-top: 7%;
-}
-
-
-.instructions h3 {
-    font-size: 21px;
-}
-
-.project-links {
-    margin-top: 7%;
-}
-
-.project-link {
-    margin-bottom: 7%;
-}
-
-.project-links .project-link a {
-    text-decoration: none;
-}
-
-.info-banner {
-    margin-top: 5%;
-    color: black;
-    background-color:#d8d8d8;
-    text-align: center;
-    font-size: 16px;
-    height: 85px;
-    padding: 10px;
-}
-
-
-/*3D button styling*/
-
-body {
+.links .fa {
+  padding: 8px 8px 8px 8px;
+  font-size: 20px;
   text-align: center;
-  color:#ecf0f1;
-  background-color: #2c3e50;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  margin-top: 20px;
+  text-decoration: none;
 }
 
-.button-3d {
-  position:relative;
-  width: auto;
-  display:inline-block;
-  color:#ecf0f1;
-  text-decoration:none;
-  border-radius:5px;
-  /* border:solid 1px #f39c12; */
-  border: solid 1px #a02720;
-  /* background:#e67e22; */
-  background: #a02727;
-  text-align:center;
-  padding:16px 18px 14px;
-  margin: 12px;
-  font-size: 18px;
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-github {
+  color: black;
+  font-size: 28px!important;
+  padding-top: 6px!important;
+}
+
+
+.section-title {
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.section-title h2 {
+  font-weight: bold;
+}
+
+.section-image img {
+  width: 100%;
+}
+
+
+
+
+/* Footer Styles */
+html {
+    height: 100%;
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  body {
+    position: relative;
+    margin: 0;
+    padding-bottom: 6rem;
+    min-height: 100%;
+  }
   
-  -webkit-transition: all 0.1s;
-	-moz-transition: all 0.1s;
-	transition: all 0.1s;
-	
-  -webkit-box-shadow: 0px 6px 0px #d35400;
-  -moz-box-shadow: 0px 6px 0px #d35400;
-  /* box-shadow: 0px 6px 0px #d35400; */
-  box-shadow: 0px 6px 0px #ce2626;
+  #footer {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      padding: 1rem;
+      /* background-color: #d94575; */
+      background-color: #343a40;
+      text-align: center;
+      color: #fff;
+      height: 80px;
+  }
+  .spacer {
+    height: 85px;
+    margin: 0 0 -50px 0;
+    /* margin: 20px 0 -50px 0; use this if you want #container to have a 'bottom padding', in this case of 20px */
+    background: transparent; /* you'll need this if #container's parent element has a different background from #container itself */
+  }
+
+  
+
+@media only screen and (max-width: 768px) {
+    .headline {
+        /* margin-top: 20%; */ /* Becuse of stick nav bar value is high */
+        padding: 0;
+        padding-top: 226px;
+    }
+}
+
+
+
+/* Skills section styling */
+
+#skills .skills-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+#skills .skills-container .skill {
+  /* border: 1px solid black; */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 6px -2px, rgba(0, 0, 0, 0.3) 0px 3px 9px -1px;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.skill {
+  position: relative;
+
+}
+
+.skill .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  /* padding: 5px 10px 5px 10px!important; */
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  position: absolute;
+  z-index: 1;
+  top: 115%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.skill .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+.skill:hover .tooltiptext {
+  visibility: visible;
+}
+
+/* End of skills section styling */
+
+
+/* Education section styling */
+
+#education .card-deck {
+  margin-bottom: 5%;
+}
+
+#education .card {
+  padding: 10px;
+}
+
+.badge {
+  text-transform: uppercase;
+  color: white;
+  background-color: #11cdef;
+}
+
+.experience-wrapper {
+  text-align: center;
+}
+
+.experience-wrapper .content {
+  /* border: 1px solid #444; */
+  width: 100%;
+  height: 100%;
+}
+
+.experience-wrapper .content .card {
+  height: 100%;
+}
+
+
+.experience-wrapper .description {
+  text-align: left!important;
+}
+
+.experience-wrapper ul{
+  text-align: left!important;
+}
+
+/* End of education section styling */
+
+
+/* Testimonial section styling */
+
+.testimonial-wrapper {
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 6px -2px, rgba(0, 0, 0, 0.3) 0px 3px 9px -1px; */
+}
+
+.testimonial-wrapper .content {
+  width: 100%;
+  height: 100%;
+}
+
+.testimonial-wrapper .content .card {
+  height: 100%;
+}
+
+.testimonial-wrapper .card .card-title {
+  text-align: center;
+}
+
+.testimonial-wrapper .card .card-subtitle {
+  text-align: center;
+}
+
+.testimonial-wrapper .view-button {
+  text-align: center;
+}
+
+/* End of testimonial section styling */
+
+
+/* Project section styling */
+
+.projects-container {
+  margin-top: 5%;
+}
+
+.project-wrapper .content {
+  width: 100%;
+  height: 100%;
+}
+
+.project-wrapper .content .card {
+  height: 100%;
+}
+
+
+.project-wrapper .project-links {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.project-wrapper .project-links .btn {
+  text-transform: uppercase;
+  will-change: transform;
+  letter-spacing: .025em;
+  font-size: .875rem;
+  padding: 0.625rem 1.25rem;
+  font-weight: 600;
+}
+
+ .btn-success {
+  color: #fff;
+  background-color: #2dce89;
+  border-color: #2dce89;
+  -webkit-box-shadow: 0 4px 6px rgb(50 50 93 / 11%), 0 1px 3px rgb(0 0 0 / 8%);
+  box-shadow: 0 4px 6px rgb(50 50 93 / 11%), 0 1px 3px rgb(0 0 0 / 8%);
+}
+
+
+.btn-github, .btn-github:hover {
+  color: #fff;
+  background-color: #222;
+  border-color: #222;
+}
+
+.btn-github {
+  -webkit-box-shadow: 0 4px 6px rgb(50 50 93 / 11%), 0 1px 3px rgb(0 0 0 / 8%);
+  box-shadow: 0 4px 6px rgb(50 50 93 / 11%), 0 1px 3px rgb(0 0 0 / 8%);
+}
+
+.project-wrapper .project-links .icon .fa-github {
+  font-size: 14px!important;
+  color: white;
+}
+
+/* End of project section styling */
+
+/* #events .events-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+#events .events-container .event {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 6px -2px, rgba(0, 0, 0, 0.3) 0px 3px 9px -1px;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.event {
+  position: relative;
+
+} */
+
+.event {
   
 }
 
-.button-3d:active{
-    -webkit-box-shadow: 0px 2px 0px #d35400;
-    -moz-box-shadow: 0px 2px 0px #d35400;
-    box-shadow: 0px 2px 0px #d35400;
-    position:relative;
-    top:4px;
+.event .event-image {
+  text-align: center;
+  margin-bottom: 8%;
+}
+
+.event .event-image img {
+  width: 100%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 6px -2px, rgba(0, 0, 0, 0.3) 0px 3px 9px -1px;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+
+.event .event-name {
+  /* text-align: justify; */
+}
+
+/* Event section styling */
+
+
+
+/* End of event section styling */
+
+
+@media only screen and (max-width: 768px) {
+  .experience-wrapper {
+    margin-bottom: 15px;
+  }
+
+  .testimonial-wrapper {
+    margin-bottom: 15px;
+  }
+
+  .project-wrapper {
+    margin-bottom: 15px;
+  }
+
+  .events-container .event {
+    margin-bottom: 8%;
+    text-align: center;
+  }
+
+}
+
+
+
+/*Styling For Modal*/
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 10; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  /* margin: 15% auto;  *//* 15% from the top and centered */
+  margin: 3% auto; 
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
