@@ -69,6 +69,14 @@ function loadTestimonialSubstring() {
 }
 
 
+function registerViewPDF() {
+    /* $(".modal-body").append(`
+    <embed src="/1935587ALL.pdf" frameborder="0" width="100%" height="100%">
+    `); */
+}
+
+
 $(document).ready(function () {
     loadTestimonialSubstring();
+    registerViewPDF();
 });

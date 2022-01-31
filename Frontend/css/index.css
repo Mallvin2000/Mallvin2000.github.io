@@ -99,15 +99,29 @@ html {
   }
 
   
-
+/* Mobile styling */
 @media only screen and (max-width: 768px) {
     .headline {
         /* margin-top: 20%; */ /* Becuse of stick nav bar value is high */
         padding: 0;
-        padding-top: 226px;
+        padding-top: 90px;
+    }
+
+    #about-me .about .section-image {
+      margin-bottom: 7%;
+    }
+
+    #projects .section-image {
+      margin-bottom: 7%;
     }
 }
 
+
+
+/* About me section styling */
+
+
+/* End of about me section styling */
 
 
 /* Skills section styling */
@@ -182,6 +196,10 @@ html {
   background-color: #11cdef;
 }
 
+.school-grade {
+  font-weight: bold;
+}
+
 .experience-wrapper {
   text-align: center;
 }
@@ -242,6 +260,10 @@ html {
 
 .projects-container {
   margin-top: 5%;
+}
+
+.project-wrapper {
+  margin-bottom: 15px;
 }
 
 .project-wrapper .content {
@@ -340,6 +362,25 @@ html {
 
 
 /* End of event section styling */
+
+
+/* Contact me section styling */
+
+#contact-me .contact-options-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+#contact-me .contact-options-container .contact-option {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 6px -2px, rgba(0, 0, 0, 0.3) 0px 3px 9px -1px;
+  padding: 20px;
+  border-radius: 50%;
+  background-color: gray
+}
+
+/* End of contact me section styling */
 
 
 @media only screen and (max-width: 768px) {
