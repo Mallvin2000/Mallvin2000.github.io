@@ -366,19 +366,7 @@ html {
 
 /* Contact me section styling */
 
-#contact-me .contact-options-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 12px;
-}
 
-#contact-me .contact-options-container .contact-option {
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 6px -2px, rgba(0, 0, 0, 0.3) 0px 3px 9px -1px;
-  padding: 20px;
-  border-radius: 50%;
-  background-color: gray
-}
 
 /* End of contact me section styling */
 
