@@ -70,9 +70,10 @@ function loadTestimonialSubstring() {
 
 
 function registerViewPDF() {
-    /* $(".modal-body").append(`
-    <embed src="/1935587ALL.pdf" frameborder="0" width="100%" height="100%">
-    `); */
+    $(".view-pdf-btn").click(function(event){
+        window.open("../Testimonial_Mallvin Rajamohan_1935587_DIT.pdf");
+        return false;
+    })
 }
 
 
